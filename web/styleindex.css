@@ -1,0 +1,215 @@
+.item h2{
+    color: rgb(110, 110, 231);
+    font-size: 20px;
+}
+
+.item p {
+    color: red;
+}
+
+.footer{
+    background-color: rgb(228, 227, 227);
+}
+
+.header h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .footer ul li {
+    list-style-type: none;
+} */
+
+footer {
+    border-top: 1px solid orangered;
+}
+
+.container h4 {
+    color: orangered;
+    font-size: 15px;
+
+}
+
+.textwidget {
+    font-size: 12px;
+}
+
+.news2 {
+    background-color: #EDEDED;
+}
+
+.content {
+    border-bottom: 1px solid grey;
+    margin-bottom: 5%;
+    padding: 4% 0%;
+}
+
+.copyright {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.banner {
+    background-image: url(./images/header.jpg);
+    width: 100%;
+    height: 400px;
+}
+
+.banner1 {
+    background-image: url(./images/HCM-scaled.jpeg);
+    width: 100%;
+    height: 400px;
+}
+
+.banner1 h1 {
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 300%;
+}
+
+.banner h1 {
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 300%;
+}
+
+.con {
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.he {
+    width: 100%;
+    height: 35px;
+    background-color: orangered;
+}
+
+.he h4 {
+    color: white;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+.he2 {
+    margin: 3% 0%;
+}
+
+.he1 {
+    border-bottom: 1px solid orangered;
+}
+
+.right1 {
+    margin-top: 3%;
+    color: black;   
+    font-size: 20px;
+}
+
+.right2 {
+   margin-top: 3%; 
+}
+
+.right a {
+    text-decoration: none;
+}
+
+.right1:hover {
+    color: orangered;
+}
+
+.A {
+    font-size: 15px;
+    color: rgb(196, 194, 194);
+}
+
+.B p{
+    color: black;
+    text-decoration: none;
+}
+
+.B h3:hover {
+    color: orangered;
+}
+
+/* FORM REGISTER */
+.container-form {
+  width: 80%;
+  margin: 50px auto 50px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 60px;
+  border: 1px solid black;
+}
+.container-login {
+  width: 60%;
+  margin: 50px auto 50px auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 60px;
+}
+.gender {
+  margin-left: 10px;
+}
+.my-botton {
+  margin: 10px auto;
+}
+
+/* ACADEMIC */
+input.form-control.input-student {
+/*  background-color: #ced4da;*/
+}
+.botton-academic {
+  margin-top: 20px;
+}
+.btn-reject {
+  margin-left: 15px;
+}
+.btn-info {
+  margin-left: 15px;
+}
+.error {
+  color: red;
+}
+.register-success {
+  color: green;
+}
+
+.bar {
+    text-decoration: none;
+    
+}
+
+.container3 {
+    background-color: #F15824 ;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+} 
+
+.container3 h2 {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+}
+
+.feature {
+    margin: 2%;
+}
+
+.feature h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.feature p {
+    font-size: 20px;
+    text-align: center;
+}
+
+hea a h3:hover {
+    color: orangered;
+    text-decoration: none;
+}

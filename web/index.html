@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./favicon.ico" />
+        <title>Trường Đại Học FPT</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Icons -->
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="styleindex.css">
+        <style>
+            @media only screen and (max-width: 760px) {
+            .news1 img {
+                width: 100%;
+            }
+            .video iframe {
+                width: 100%;
+            }
+        }
+            #main .text-small{
+                font-size:14px;
+                width: 100%;
+                white-space: nowrap;
+            }
+            .big {
+                color: #fff;
+                font-size: 60px;
+            }
+            .text-top-small {
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: black;
+            }
+            #main p{
+                margin: 0 0 10px;
+            }
+            .item h2 {
+                padding: 0%;
+                color: black;
+            }
+            .item a {
+                text-decoration: none;
+            }
+            .item h2:hover {
+                color: orangered;
+            }
+            .button {
+                line-height: 24px;
+            }
+            .button--orange {
+                border-color: #f05123;
+                color: #f05123;
+            }
+            .botto--outline {
+                border: 1px solid rgba(255,255,255,0.8);
+                background: transparent;
+            }
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover, .dropdown:hover .dropbtn {
+                background-color: #F05123;
+                color: white;
+                font-weight: bold;
+            }
+            li.dropdown {
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #F05123;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #F05123;
+                color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <!--menu content-->
+            <div class="row">
+
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="dropdown"><a href="about.html" class="dropbtn">About</a>
+                                <div class="dropdown-content">
+                                    <a href="about.html">Lịch sử thành lập</a>
+                                    <a href="about/1.html">Triết lý đào tạo</a>
+                                    <a href="about/2.html">Giải thưởng và thành tích</a>
+                                </div>
+                            </li>
+                            <li class="dropdown"><a href="ShowNewsServlet" class="dropbtn">News</a>
+                                <div class="dropdown-content">
+                                    <a href="ShowNewsServlet">Tim tức chung</a>
+                                    <a href="#">Hoạt động sinh viên</a>
+                                    <a href="#">Sự kiện</a>
+                                </div>
+                            </li>
+                            <li><a href="./student/chooseCampus.jsp">Contact</a></li>
+                            <li><a href="./academic/login.jsp">LogIn</a></li>
+
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+
+                    </div>
+
+                </nav>
+
+            </div>
+
+            <!--slider content-->
+            <div class="row">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img class="img-responsive" src="images/cover-web-FPTU-2022-1-1.png" alt="PNJ Silver">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="images/cover-web-FPTU-2022-2.png" alt="PNJ Silver">
+                        </div>
+
+                        <div class="item">
+                            <img class="img-responsive" src="images/cover-web-FPTU-2022-3.png" alt="PNJ Silver">
+                        </div>
+
+                        <!--<div class="item">
+                            <img class="img-responsive" src="images/slide-04.jpg" alt="PNJ Silver">
+                        </div>-->
+
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+            <section id="reason">
+                <div class="container3">
+                    <div class="text-center">
+                        <h2>VÌ SAO <span style="font-size: 120%;">50.000</span> 
+                            SINH VIÊN CHỌN ĐẠI HỌC FPT?</h2>
+                    </div>
+                    <div id="main" class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-6 col-md-offset-1 text-center">
+                            <p class="big">5★</p>
+                            <p class="text-top-small">Chất lượng<br> đào tạo</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 text-center">
+                            <img class="img-responsive" style="margin-left: auto;margin-right: auto; margin-top: 23px;margin-bottom: 21px;" 
+                                 src="images/img-top2-qtkd.png">
+                            <p class="text-top-small">Quản trị kinh doanh<br>tốt nhất Việt Nam</p>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 text-center">
+                            <p class="big">98%</p>
+                            <p class="text-top-small">Sinh viên có<br> việc làm ngay</p>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                            <p class="big">19%</p>
+                            <p class="text-top-small">Sinh viên có<br>việc làm tại nước ngoài</p>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12 text-center">
+                            <img class="img-responsive" style="margin-left: auto;margin-right: auto; margin-top: 23px;margin-bottom: 21px;" 
+                                 src="images/img-salary.png"/>
+                            <p class="text-top-small">LÀ MỨC LƯƠNG<br>TRUNG BÌNH</p>
+                        </div>
+                    </div>
+                </div>   
+            </section>
+            </div>
+            <div class="row header">
+                <div>
+                    <h1>NGÀNH ĐÀO TẠO</h1>
+                </div>
+            </div>
+
+            <div id="main" class="row">
+                <a href="special/cntt.html">
+                    <div class="col-md-2 col-sm-6 col-xs-6 col-md-offset-1 text-center">
+                        <img src="images/course_8.png" />
+                        <h2 class="text-small">Công nghệ thông tin</h2></div>
+                </a>
+
+                <a href="special/qtkd.html">
+                    <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                        <img src="images/course_11056.png" />
+                        <h2 class="text-small">Quản trị kinh doanh</h2>
+                    </div>
+                </a>
+
+
+                <a href="special/nna.html">
+                    <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                        <img src="images/course_27.png" />
+                        <h2 class="text-small">Ngôn ngữ Anh </h2>
+                    </div>
+                </a>
+
+                <a href="special/nnn.html">
+                    <div class="col-md-2 col-sm-6 col-xs-6 text-center">
+                        <img src="images/course_28.png" />
+                        <h2 class="text-small">Ngôn ngữ Nhật</h2>
+                    </div>
+                </a>
+
+                <a href="special/nnh.html">
+                    <div class="col-md-2 col-sm-12 col-xs-12 text-center">
+                        <img src="images/course_4471.png" />
+                        <h2 class="text-small">Ngôn ngữ Hàn Quốc</h2>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="row header">
+                <div>
+                    <h1>TIN TỨC</h1>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-8 news1">
+
+                    <div class="col-md-6 col-sm-6 item">
+                        <a href="news/tkmt.html"><img src="images/1.png" class="img-responsive" />
+                            <h2 class="text-new">Học thiết kế mĩ thuật số tại Đại Học FPT có gì thú vị</h2>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 item">
+                        <a href="news/2.html"><img src="images/2.png" class="img-responsive" />
+                            <h2 class="text-new">Sinh viên Quản trị kinh doanh ĐH FPT-Những con người của sự ngoại giao</h2>
+                        </a>
+                    </div>
+
+
+                    <div class="col-md-6 col-sm-6 item">
+                        <a href="news/totol.html"><img src="images/3.png" class="img-responsive" />
+                            <h2 class="text-new">Sinh viên Trí tuệ nhân tạo nói gì khi học tập tại ĐH FPT </h2>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 item">
+                        <a href="news/5.html"><img src="images/4.png" class="img-responsive" />
+                            <h2 class="text-new">Truyền thông đa phương tiện dưới con mắt của sinh viên trường F</h2>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 news2">
+                    <a style="color: black;"><div class="content">
+                        SV FPT trau dồi kỹ năng MC cùng FES-CAMP 02 – Trại người dẫn chương trình
+                        <img src="images/new_arrow.png" class="img-responsive" />
+                        </div>
+                    </a>
+                    <a style="color: black;"><div class="content">
+                        Ngành truyền thông đa phương tiện đang tìm kiếm tài năng
+                        <img src="images/new_arrow.png" class="img-responsive" />
+                        </div>
+                    </a>
+                    <a style="color: black;"><div class="content">
+                        Gala Brothers &amp; Sisters: Một chặng đường dài mô hình sinh viên giúp sinh viên
+                        <img src="images/new_arrow.png" class="img-responsive" />
+                        </div>
+                    </a>
+                    <a style="color: black;"><div class="content">
+                        Tưng bừng hội xuân Làng Cóc của sinh viên ĐH FPT TP.HCM
+                        <img src="images/new_arrow.png" class="img-responsive" />
+                        </div>
+                    </a>
+                    <a style="color: black;"><div class="content">
+                        Sự khác biệt trong chương trình đào tạo tại Đại học FPT
+                        <img src="images/new_arrow.png" class="img-responsive" />
+                        </div>
+                    </a>
+                    <!-- <div class="content">
+                        Vì sao SV Digital Marketing lại chọn FPT làm bến đỗ?
+                    </div> -->
+                    <!-- <div >
+                        Mỹ Loán-Đóa hướng dương rực rỡ của trường F 
+                    </div> -->
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center" style="padding-top: 15px;">
+                    <a class="button button--outline button--orange" 
+                       href="news.html">XEM THÊM TIN TỨC</a>
+                </div>
+
+            </div>
+            <div class="container" style="margin-top: 3%;">
+                <div class="row">
+                    <div class="col-md-6 video">
+                        
+                        <iframe wight="500" height="218" src="https://www.youtube.com/embed/g42VaFGZXsY">
+                        </iframe>
+                        
+                    </div>
+                    <div class="col-md-6" >
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <!--<li data-target="#carousel-example-generic" data-slide-to="3"></li>-->
+
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item">
+
+                                    <img style="float: left; margin: 0px 15px 15px 0px; min-width: 150px; min-height: 150px; border-radius: 350px;" src="images/cô-TA.jpg" alt="PNJ Silver">
+
+                                    <span style="color: #F05123;"><b>Cô Karen Cheer Badong</b></span><br>
+                                    <span style="color: #F05123;"><b>Giảng viên bộ môn Tiếng Anh</b></span><br>
+                                    <span><br>Sinh viên FPTU có tư duy cởi mở, kiên trì và khiêm tốn. 
+                                        Các em đều có cách riêng và độc đáo để thể hiện cá tính của mình. 
+                                        Tuy nhiên, trong những điểm khác biệt đó, một điểm chung ở họ 
+                                        là cảm giác háo hức muốn thành công trong bất cứ con đường sự nghiệp nào họ đã chọn. 
+                                        Các em cũng rất chăm chỉ và đề cao tình yêu thương vô điều kiện mà cha mẹ dành cho mình.
+                                    </span>
+
+                                </div>
+                                <div class="item active">
+                                    <img class="img-responsive" style="border-radius: 350px; float: left; margin: 0px 15px 15px 0px; min-width: 150px;" src="images/cô-tieng-Nhat.jpg" alt="PNJ Silver">
+                                    <span style="color: #F05123;"><b>Cô Kuriko Shinozaki</b> </span><br>
+                                    <span style="color: #F05123;"><b>Giảng viên ngành Ngôn ngữ Nhật</b></span><br>
+                                    <span><br>FPT là trường ĐH khác biệt, mới mẻ, tôi bị ấn tượng bởi các bạn sinh viên dễ mến, chân thật, cũng có em cá tính. 
+                                        Mối quan hệ giữa giảng viên và sinh viên rất thân thiện, cởi mở. 
+                                        Việc giảng dạy và tổ chức hoạt động ngoại khoá khá vất vả nhưng tôi cảm thấy vui vì năng lực tiếng Nhật, sự tự tin trong giao tiếp của SV ngày trở nên tốt hơn.														
+                                    </span>
+                                </div>
+
+                                <div class="item">
+                                    <img class="img-responsive" style="border-radius: 350px; float: left; margin: 0px 15px 15px 0px; min-width: 150px;" src="images/thầy-TA.jpg" alt="PNJ Silver">
+                                    <span style="color: #F05123;"><b>Thầy Lyndon Britanico Badong</b></span><br>
+                                    <span style="color: #F05123;"><b>Giảng viên bộ môn Tiếng Anh</b></span><br>
+                                    <span><br>Tôi rất hài lòng khi được làm việc tại FPTU. 
+                                        Đầu tiên phải kể đến không gian làm việc xanh, thiên nhiên xung quanh trong lành và thanh bình. 
+                                        Có những lúc trong giờ giải lao, chúng tôi đi dạo quanh khuôn viên trường chỉ để giải tỏa đầu óc và F5 một chút. 
+                                        Thứ hai, đồng nghiệp và sinh viên ở FPTU tôn trọng sự khác biệt chúng tôi. 
+                                        Những giảng viên nước ngoài như chúng tôi đều đặt mục tiêu cao nhất.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2022 Bản quyền thuộc về Trường Đại học FPT.
+            </div>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4>HÀ NỘI</h4>
+                            <div class="textwidget">
+                                <p>Khu Giáo dục và Đào tạo – Khu Công nghệ cao Hòa Lạc
+                                    – Km29 Đại lộ Thăng Long,
+                                    H. Thạch Thất,TP. Hà Nội
+                                </p>
+                                <p>Điện thoại: 024 7300 1866</p>
+                                <p>Email: daihocfpt@fpt.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h4>TP. HỒ CHÍ MINH</h4>
+                            <div class="textwidget">
+                                <p>Lô E2a-7, Đường D1 Khu Công nghệ cao,
+                                    P. Long Thạnh Mỹ, TP. Thủ Đức,
+                                    TP. Hồ Chí Minh
+                                </p>
+                                <p>Điện thoại: 028 7300 1866</p>
+                                <p>Email: daihocfpt@fpt.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>ĐÀ NẴNG</h4>
+                            <div class="textwidget">
+                                <p>Khu đô thị công nghệ FPT Đà Nẵng,
+                                    P. Hoà Hải, Q. Ngũ Hành Sơn,
+                                    TP. Đà Nẵng
+                                </p>
+                                <p>Điện thoại: 0236 730 1866</p>
+                                <p>Email: daihocfpt@fpt.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>CẦN THƠ</h4>
+                            <div class="textwidget">
+                                <p>Số 600 Đường Nguyễn Văn Cừ (nối dài),
+                                    P. An Bình, Q. Ninh Kiều, TP. Cần Thơ
+                                </p>
+                                <p>Điện thoại: 0292 730 1866</p>
+                                <p>Email: daihocfpt@fpt.edu.vn</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>QUY NHƠN</h4>
+                            <div class="textwidget">
+                                <p>Khu đô thị mới An Phú Thịnh, Phường Nhơn Bình & Phường Đống Đa, TP. Quy
+                                    Nhơn, Bình Định
+                                </p>
+                                <p>Điện thoại: 0256 730 1866</p>
+                                <p>Email: daihocfpt@fpt.edu.vn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+        <script src="js/Jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+    </body>
+
+</html>
